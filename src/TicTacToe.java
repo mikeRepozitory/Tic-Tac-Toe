@@ -9,7 +9,7 @@ public class TicTacToe {
 
     JFrame frame = new JFrame("Tic-Tac-Toe");
     JLabel textLabel = new JLabel();
-    JLabel scoreLabel = new JLabel("Score: X=0 | O=0");
+    JLabel scoreLabel = new JLabel("Best of 3 Score: X = 0 | O = 0");
     JPanel textPanel = new JPanel(new BorderLayout());
     JPanel boardPanel = new JPanel();
     JButton[][] board = new JButton[3][3];
@@ -162,7 +162,7 @@ public class TicTacToe {
     }
 
     void updateScore() {
-        scoreLabel.setText("Score: X=" + playerXScore + " | O=" + playerOScore);
+        scoreLabel.setText("Best of 3 Score: X = " + playerXScore + " | O = " + playerOScore);
     }
 
     void checkChampion() {
